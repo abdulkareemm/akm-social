@@ -1,6 +1,6 @@
 import "./App.css";
 import { ForwardArrow, Logo } from "./img";
-import { MainContainer } from "./components";
+import { MainContainer, Pin } from "./components";
 
 import {
   Add,
@@ -41,16 +41,26 @@ function App() {
         </div>
       </div>
       <main>
-      <div className="searchBox">
-        <input type="text" placeholder="Search..."/>
-        <div className="search">
-          <img src={ForwardArrow} alt=""/>
-          
+        <div className="searchBox">
+          <input type="text" placeholder="Search..." />
+          <div className="search">
+            <img src={ForwardArrow} alt="" />
+          </div>
         </div>
-      </div>
-      <div className="main-container">
-        
-      </div>
+        <div className="main-container">
+          <Pin pinSize={"small"} />
+          <Pin pinSize={"medium"} />
+          <Pin pinSize={"large"} />
+          <Pin pinSize={"small"} />
+          <Pin pinSize={"medium"} />
+          <Pin pinSize={"large"} />
+          <Pin pinSize={"small"} />
+          <Pin pinSize={"medium"} />
+          <Pin pinSize={"large"} />
+          <Pin pinSize={"small"} />
+          <Pin pinSize={"medium"} />
+          <Pin pinSize={"large"} />
+        </div>
       </main>
     </div>
   );
