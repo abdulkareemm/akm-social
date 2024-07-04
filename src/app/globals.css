@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mx-navbar {
+  @apply px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64;
+}
+.mobile-menu {
+  @apply left-0 top-24 w-full h-[calc(100vh-96px)] bg-white flex flex-col items-center justify-center gap-8 font-medium text-xl z-10;
+}
